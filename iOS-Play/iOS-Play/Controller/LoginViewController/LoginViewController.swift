@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 import SnapKit
 
-class LoginViewController : UIViewController {
+final class LoginViewController: UIViewController {
     
     private let backButton = UIButton(type: .custom).then {
         $0.backgroundColor = UIColor.systemPink

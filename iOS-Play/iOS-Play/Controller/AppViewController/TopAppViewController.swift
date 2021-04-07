@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class TopAppViewController : UIViewController {
+final class TopAppViewController : UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()

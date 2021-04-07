@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 import Then
 
-class BaseNavigationController: UINavigationController {
+final class BaseNavigationController: UINavigationController {
     
     private let userButton = UIButton(type: .custom).then {
         $0.backgroundColor = UIColor.systemPink

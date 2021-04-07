@@ -64,6 +64,7 @@
 	</array>
 	<key>UIAppFonts</key>
 	<array>
+
 		<string>Arvo-BoldItalic.ttf</string>
 		<string>Arvo-Bold.ttf</string>
 		<string>Arvo-Italic.ttf</string>

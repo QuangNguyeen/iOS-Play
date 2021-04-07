@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 //MARK: - AppViewController
-class AppViewController: UIViewController {
+final class AppViewController: UIViewController {
     
     private let searchBar = UISearchBar()
     
@@ -48,7 +48,6 @@ class AppViewController: UIViewController {
                                                       }
     
     private var currentPageIndex = 0
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -94,7 +93,6 @@ class AppViewController: UIViewController {
         let topGrossingIpadVC = TopAppViewController()
         let topPaidVC = TopAppViewController()
         
-        
         newGameVC.view.tag = 0
         newAppVC.view.tag = 1
         topFreeVC.view.tag = 2
@@ -131,10 +129,18 @@ class AppViewController: UIViewController {
                 make.top.equalTo(segmentCollection.snp.bottom).offset(0)
                 make.left.bottom.right.equalToSuperview()
             }
+            
+            $0.didMove(toParent: self)
         }
-        
-        pageController.didMove(toParent: self)
         addChild(pageController)
+        
+        
+        //remove swipeGesture
+        for view in self.pageController.view.subviews {
+            if let subView = view as? UIScrollView {
+                subView.isScrollEnabled = false
+            }
+        }
     }
     
 }

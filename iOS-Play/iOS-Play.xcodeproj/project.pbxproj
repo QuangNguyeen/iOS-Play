@@ -9,7 +9,8 @@
 /* Begin PBXBuildFile section */
 		D34DB91D7CA4B380288D7CF2 /* Pods_iOS_Play.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95FB2CAB69FF583436CAA23A /* Pods_iOS_Play.framework */; };
 		E33227502615824800DA11BE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E332274F2615824800DA11BE /* LoginViewController.swift */; };
-		E353057F261B13B40077AB04 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E353057E261B13B40077AB04 /* Fonts.swift */; };
+		E3530575261AFDD10077AB04 /* DataMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3530574261AFDD10077AB04 /* DataMock.swift */; };
+		E3530579261B0A450077AB04 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3530578261B0A450077AB04 /* Fonts.swift */; };
 		E36E6832261704710040F922 /* FeedTypeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36E6830261704710040F922 /* FeedTypeEnum.swift */; };
 		E36E6833261704710040F922 /* SegmentCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36E6831261704710040F922 /* SegmentCollectionCell.swift */; };
 		E36E6837261704890040F922 /* TopAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36E6835261704890040F922 /* TopAppViewController.swift */; };
@@ -17,6 +18,19 @@
 		E379630F2615AE2800CBF147 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E379630D2615AE2800CBF147 /* Strings.swift */; };
 		E37963102615AE2800CBF147 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = E379630E2615AE2800CBF147 /* Assets.swift */; };
 		E37963142615AE5F00CBF147 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E37963122615AE5F00CBF147 /* Localizable.strings */; };
+		E37D7CD1261AB66B00E433BB /* BannerViewTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37D7CD0261AB66B00E433BB /* BannerViewTableCell.swift */; };
+		E37D7CD5261AB67500E433BB /* CollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37D7CD3261AB67500E433BB /* CollectionTableViewCell.swift */; };
+		E37D7CD6261AB67500E433BB /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37D7CD4261AB67500E433BB /* CollectionViewCell.swift */; };
+		E37D7CD9261AB68500E433BB /* GenreViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37D7CD8261AB68500E433BB /* GenreViewCell.swift */; };
+		E37D7CDD261AB68E00E433BB /* HighlightViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37D7CDB261AB68E00E433BB /* HighlightViewCell.swift */; };
+		E37D7CDE261AB68E00E433BB /* HighlighTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37D7CDC261AB68E00E433BB /* HighlighTableViewCell.swift */; };
+		E37D7CE7261AB6E200E433BB /* Arvo-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E37D7CE2261AB6E200E433BB /* Arvo-Bold.ttf */; };
+		E37D7CE8261AB6E200E433BB /* Arvo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E37D7CE3261AB6E200E433BB /* Arvo-Regular.ttf */; };
+		E37D7CE9261AB6E200E433BB /* Arvo-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E37D7CE4261AB6E200E433BB /* Arvo-Italic.ttf */; };
+		E37D7CEA261AB6E200E433BB /* Arvo-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E37D7CE5261AB6E200E433BB /* Arvo-BoldItalic.ttf */; };
+		E37D7CF2261ABB7900E433BB /* DetailAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37D7CF1261ABB7900E433BB /* DetailAppViewController.swift */; };
+		E37D7CF9261ACADB00E433BB /* Cell++.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37D7CF8261ACADB00E433BB /* Cell++.swift */; };
+		E37D7CFC261ACC8500E433BB /* CellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37D7CFB261ACC8400E433BB /* CellModel.swift */; };
 		E38ABAEE2618136800B118AD /* Reusable in Frameworks */ = {isa = PBXBuildFile; productRef = E38ABAED2618136800B118AD /* Reusable */; };
 		E3E70F0B26144C9200271013 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E70F0A26144C9200271013 /* AppDelegate.swift */; };
 		E3E70F0D26144C9200271013 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E70F0C26144C9200271013 /* SceneDelegate.swift */; };
@@ -39,11 +53,8 @@
 		8B6E124329B5C756D42E4291 /* Pods-iOS-Play.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Play.release.xcconfig"; path = "Target Support Files/Pods-iOS-Play/Pods-iOS-Play.release.xcconfig"; sourceTree = "<group>"; };
 		95FB2CAB69FF583436CAA23A /* Pods_iOS_Play.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_Play.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E332274F2615824800DA11BE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		E353057E261B13B40077AB04 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
-		E3530582261B13EE0077AB04 /* Arvo-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Arvo-BoldItalic.ttf"; sourceTree = "<group>"; };
-		E3530583261B13EE0077AB04 /* Arvo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Arvo-Regular.ttf"; sourceTree = "<group>"; };
-		E3530584261B13EE0077AB04 /* Arvo-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Arvo-Bold.ttf"; sourceTree = "<group>"; };
-		E3530585261B13EE0077AB04 /* Arvo-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Arvo-Italic.ttf"; sourceTree = "<group>"; };
+		E3530574261AFDD10077AB04 /* DataMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataMock.swift; sourceTree = "<group>"; };
+		E3530578261B0A450077AB04 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		E36E6830261704710040F922 /* FeedTypeEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTypeEnum.swift; sourceTree = "<group>"; };
 		E36E6831261704710040F922 /* SegmentCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentCollectionCell.swift; sourceTree = "<group>"; };
 		E36E6835261704890040F922 /* TopAppViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopAppViewController.swift; sourceTree = "<group>"; };
@@ -53,6 +64,19 @@
 		E379630D2615AE2800CBF147 /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		E379630E2615AE2800CBF147 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		E37963132615AE5F00CBF147 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E37D7CD0261AB66B00E433BB /* BannerViewTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BannerViewTableCell.swift; sourceTree = "<group>"; };
+		E37D7CD3261AB67500E433BB /* CollectionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionTableViewCell.swift; sourceTree = "<group>"; };
+		E37D7CD4261AB67500E433BB /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		E37D7CD8261AB68500E433BB /* GenreViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenreViewCell.swift; sourceTree = "<group>"; };
+		E37D7CDB261AB68E00E433BB /* HighlightViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighlightViewCell.swift; sourceTree = "<group>"; };
+		E37D7CDC261AB68E00E433BB /* HighlighTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighlighTableViewCell.swift; sourceTree = "<group>"; };
+		E37D7CE2261AB6E200E433BB /* Arvo-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Arvo-Bold.ttf"; path = "../../Font/Arvo-Bold.ttf"; sourceTree = "<group>"; };
+		E37D7CE3261AB6E200E433BB /* Arvo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Arvo-Regular.ttf"; path = "../../Font/Arvo-Regular.ttf"; sourceTree = "<group>"; };
+		E37D7CE4261AB6E200E433BB /* Arvo-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Arvo-Italic.ttf"; path = "../../Font/Arvo-Italic.ttf"; sourceTree = "<group>"; };
+		E37D7CE5261AB6E200E433BB /* Arvo-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Arvo-BoldItalic.ttf"; path = "../../Font/Arvo-BoldItalic.ttf"; sourceTree = "<group>"; };
+		E37D7CF1261ABB7900E433BB /* DetailAppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailAppViewController.swift; sourceTree = "<group>"; };
+		E37D7CF8261ACADB00E433BB /* Cell++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cell++.swift"; sourceTree = "<group>"; };
+		E37D7CFB261ACC8400E433BB /* CellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellModel.swift; sourceTree = "<group>"; };
 		E3E70F0726144C9200271013 /* iOS-Play.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Play.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3E70F0A26144C9200271013 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E3E70F0C26144C9200271013 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -104,6 +128,7 @@
 		E332273D2615663200DA11BE /* Help */ = {
 			isa = PBXGroup;
 			children = (
+				E37D7CF8261ACADB00E433BB /* Cell++.swift */,
 			);
 			path = Help;
 			sourceTree = "<group>";
@@ -119,10 +144,10 @@
 		E353057D261B13940077AB04 /* Font */ = {
 			isa = PBXGroup;
 			children = (
-				E3530584261B13EE0077AB04 /* Arvo-Bold.ttf */,
-				E3530582261B13EE0077AB04 /* Arvo-BoldItalic.ttf */,
-				E3530585261B13EE0077AB04 /* Arvo-Italic.ttf */,
-				E3530583261B13EE0077AB04 /* Arvo-Regular.ttf */,
+				E37D7CE2261AB6E200E433BB /* Arvo-Bold.ttf */,
+				E37D7CE5261AB6E200E433BB /* Arvo-BoldItalic.ttf */,
+				E37D7CE4261AB6E200E433BB /* Arvo-Italic.ttf */,
+				E37D7CE3261AB6E200E433BB /* Arvo-Regular.ttf */,
 			);
 			path = Font;
 			sourceTree = "<group>";
@@ -133,9 +158,54 @@
 				E353057D261B13940077AB04 /* Font */,
 				E379630E2615AE2800CBF147 /* Assets.swift */,
 				E379630D2615AE2800CBF147 /* Strings.swift */,
-				E353057E261B13B40077AB04 /* Fonts.swift */,
+				E3530578261B0A450077AB04 /* Fonts.swift */,
 			);
 			path = SwiftGen;
+			sourceTree = "<group>";
+		};
+		E37D7CBD261AB5D400E433BB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E37D7CCB261AB62A00E433BB /* Genre */,
+				E37D7CCD261AB63C00E433BB /* AppCollection */,
+				E37D7CCF261AB64D00E433BB /* HighlightCollection */,
+				E37D7CCE261AB64800E433BB /* Banner */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E37D7CCB261AB62A00E433BB /* Genre */ = {
+			isa = PBXGroup;
+			children = (
+				E37D7CD8261AB68500E433BB /* GenreViewCell.swift */,
+			);
+			path = Genre;
+			sourceTree = "<group>";
+		};
+		E37D7CCD261AB63C00E433BB /* AppCollection */ = {
+			isa = PBXGroup;
+			children = (
+				E37D7CD3261AB67500E433BB /* CollectionTableViewCell.swift */,
+				E37D7CD4261AB67500E433BB /* CollectionViewCell.swift */,
+			);
+			path = AppCollection;
+			sourceTree = "<group>";
+		};
+		E37D7CCE261AB64800E433BB /* Banner */ = {
+			isa = PBXGroup;
+			children = (
+				E37D7CD0261AB66B00E433BB /* BannerViewTableCell.swift */,
+			);
+			path = Banner;
+			sourceTree = "<group>";
+		};
+		E37D7CCF261AB64D00E433BB /* HighlightCollection */ = {
+			isa = PBXGroup;
+			children = (
+				E37D7CDC261AB68E00E433BB /* HighlighTableViewCell.swift */,
+				E37D7CDB261AB68E00E433BB /* HighlightViewCell.swift */,
+			);
+			path = HighlightCollection;
 			sourceTree = "<group>";
 		};
 		E3E70EFE26144C9200271013 = {
@@ -177,6 +247,7 @@
 		E3E70F1F26144D3800271013 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E37D7CFB261ACC8400E433BB /* CellModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -197,6 +268,7 @@
 				E33227422615805A00DA11BE /* LoginViewController */,
 				E3E70F41261457A900271013 /* BaseNavigationController */,
 				E3E70F2526144E4200271013 /* Tabar Controller */,
+				E37D7CBD261AB5D400E433BB /* ViewModel */,
 				E3E70F2626144E5000271013 /* AppViewController */,
 				E3E70F2726144E6C00271013 /* MusicViewController */,
 				E3E70F2826144E7A00271013 /* MovieViewController */,
@@ -221,8 +293,10 @@
 			isa = PBXGroup;
 			children = (
 				E3E70F2B26144EE800271013 /* AppViewController.swift */,
+				E3530574261AFDD10077AB04 /* DataMock.swift */,
 				E36E6836261704890040F922 /* NewGameViewController.swift */,
 				E36E6835261704890040F922 /* TopAppViewController.swift */,
+				E37D7CF1261ABB7900E433BB /* DetailAppViewController.swift */,
 			);
 			path = AppViewController;
 			sourceTree = "<group>";
@@ -336,8 +410,12 @@
 			files = (
 				E3E70F1726144C9400271013 /* LaunchScreen.storyboard in Resources */,
 				E37963142615AE5F00CBF147 /* Localizable.strings in Resources */,
-				E3E70F1426144C9400271013 /* Assets.xcassets in Resources */,
 				E3E70F1226144C9200271013 /* Main.storyboard in Resources */,
+				E3E70F1426144C9400271013 /* Assets.xcassets in Resources */,
+				E37D7CE8261AB6E200E433BB /* Arvo-Regular.ttf in Resources */,
+				E37D7CEA261AB6E200E433BB /* Arvo-BoldItalic.ttf in Resources */,
+				E37D7CE9261AB6E200E433BB /* Arvo-Italic.ttf in Resources */,
+				E37D7CE7261AB6E200E433BB /* Arvo-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,6 +468,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E37D7CF9261ACADB00E433BB /* Cell++.swift in Sources */,
 				E36E6832261704710040F922 /* FeedTypeEnum.swift in Sources */,
 				E33227502615824800DA11BE /* LoginViewController.swift in Sources */,
 				E3E70F2F26144F4100271013 /* MusicViewController.swift in Sources */,
@@ -397,16 +476,25 @@
 				E3E70F4E26146A2B00271013 /* TabBarItems.swift in Sources */,
 				E3E70F2C26144EE800271013 /* AppViewController.swift in Sources */,
 				E3E70F43261457BE00271013 /* BaseNavigationController.swift in Sources */,
+				E3530579261B0A450077AB04 /* Fonts.swift in Sources */,
+				E37D7CDE261AB68E00E433BB /* HighlighTableViewCell.swift in Sources */,
+				E37D7CD9261AB68500E433BB /* GenreViewCell.swift in Sources */,
 				E36E6833261704710040F922 /* SegmentCollectionCell.swift in Sources */,
+				E3530575261AFDD10077AB04 /* DataMock.swift in Sources */,
+				E37D7CFC261ACC8500E433BB /* CellModel.swift in Sources */,
 				E36E6838261704890040F922 /* NewGameViewController.swift in Sources */,
+				E37D7CF2261ABB7900E433BB /* DetailAppViewController.swift in Sources */,
 				E36E6837261704890040F922 /* TopAppViewController.swift in Sources */,
+				E37D7CD6261AB67500E433BB /* CollectionViewCell.swift in Sources */,
 				E3E70F2326144DAB00271013 /* MainTabBarViewController.swift in Sources */,
+				E37D7CDD261AB68E00E433BB /* HighlightViewCell.swift in Sources */,
 				E379630F2615AE2800CBF147 /* Strings.swift in Sources */,
 				E37963102615AE2800CBF147 /* Assets.swift in Sources */,
 				E3E70F3726144F6000271013 /* BookViewController.swift in Sources */,
+				E37D7CD1261AB66B00E433BB /* BannerViewTableCell.swift in Sources */,
 				E3E70F0B26144C9200271013 /* AppDelegate.swift in Sources */,
 				E3E70F0D26144C9200271013 /* SceneDelegate.swift in Sources */,
-				E353057F261B13B40077AB04 /* Fonts.swift in Sources */,
+				E37D7CD5261AB67500E433BB /* CollectionTableViewCell.swift in Sources */,
 				E3E70F3A26144F6900271013 /* TVShowViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

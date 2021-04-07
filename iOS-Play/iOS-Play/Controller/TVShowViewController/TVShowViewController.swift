@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class TVShowViewController: UIViewController {
+final class TVShowViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
